@@ -1,21 +1,22 @@
 {
   "name": "reeler",
   "version": "1.0.0",
-  "description": "A project for managing image uploads and processing using MongoDB and Mongoose.",
-  "main": "lib/db.ts",
+  "description": "Reels Platform (VideoHosting Platform)",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "mongoose": "^6.0.0"
+    "autoprefixer": "^10.4.21",
+    "mongoose": "^6.0.0",
+    "next": "^14.2.30",
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.1.10"
   },
-  "devDependencies": {
-    "ts-node": "^10.0.0",
-    "typescript": "^4.0.0",
-    "ts-node-dev": "^1.0.0"
-  },
-  "author": "Your Name",
-  "license": "MIT"
+  "author": "Bindu Satya",
+  "license": "MIT",
+  "type": "module"
 }

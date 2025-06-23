@@ -10,11 +10,7 @@ export const metadata = {
   description: "Demo of ImageKit integration with Next.js",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
