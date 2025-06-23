@@ -1,121 +1,45 @@
-# ImageKit Video Shop
+# Reeler Project
 
-A modern Next.js application for managing and selling video content using ImageKit integration. This project provides a full-featured platform with user authentication, video upload capabilities, and payment processing using Razorpay.
+## Overview
+Reeler is a Node.js application that utilizes Mongoose to connect to a MongoDB database. The application is designed to manage database connections efficiently by caching the connection to avoid multiple instances during its lifecycle.
 
 ## Features
+- Establishes a connection to MongoDB using Mongoose.
+- Caches the database connection for improved performance.
+- Configurable through environment variables.
 
-- 🔐 User Authentication (NextAuth.js)
-- 📹 Video Upload and Management (ImageKit)
-- 💳 Payment Processing (Razorpay)
-- 🎨 Modern UI with Tailwind CSS and DaisyUI
-- 📱 Fully Responsive Design
-- 🔒 Secure API Routes
-- 📧 Email Notifications (Nodemailer)
-- 🗄️ MongoDB Database Integration
+## Setup Instructions
 
-## Tech Stack
+### Prerequisites
+- Node.js (version 14 or higher)
+- MongoDB instance (local or cloud)
 
-- **Frontend**: Next.js 15, React 19, TypeScript
-- **Styling**: Tailwind CSS, DaisyUI
-- **Authentication**: NextAuth.js, JWT
-- **Database**: MongoDB with Mongoose
-- **File Storage**: ImageKit
-- **Payment**: Razorpay
-- **Email**: Nodemailer
-- **Form Handling**: React Hook Form
-
-## Prerequisites
-
-- Node.js (Latest LTS version)
-- MongoDB Database
-- ImageKit Account
-- Razorpay Account
-- SMTP Server (for email notifications)
-
-## Getting Started
-
+### Installation
 1. Clone the repository:
-```bash
-git clone <repository-url>
-cd imagekit-video-main
+   ```
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```
+   cd Reeler
+   ```
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+### Configuration
+1. Create a `.env.local` file in the root directory of the project.
+2. Add your MongoDB connection string:
+   ```
+   MONGODB_URI=<your-mongodb-connection-string>
+   ```
+
+### Usage
+To start the application, run:
 ```
-
-2. Install dependencies:
-```bash
-npm install
+npm start
 ```
-
-3. Configure environment variables:
-   - Copy `.env.example` to `.env`
-   - Fill in the required environment variables
-
-4. Run the development server:
-```bash
-npm run dev
-```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Environment Variables
-
-Create a `.env` file with the following variables:
-
-```env
-# Database
-MONGODB_URI=
-
-# Authentication
-NEXTAUTH_SECRET=
-NEXTAUTH_URL=
-
-# ImageKit
-IMAGEKIT_PUBLIC_KEY=
-IMAGEKIT_PRIVATE_KEY=
-IMAGEKIT_URL_ENDPOINT=
-
-# Razorpay
-RAZORPAY_KEY_ID=
-RAZORPAY_KEY_SECRET=
-
-# Email (SMTP)
-SMTP_HOST=
-SMTP_PORT=
-SMTP_USER=
-SMTP_PASS=
-```
-
-## Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build production application
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run seed` - Seed the database
-- `npm run mailtrap` - Test email configuration
-
-## Project Structure
-
-```
-├── app/                  # Next.js app directory
-│   ├── api/             # API routes
-│   ├── components/      # Reusable components
-│   ├── login/          # Login page
-│   ├── register/       # Registration page
-│   └── upload/         # Video upload page
-├── lib/                # Utility functions
-├── models/             # MongoDB models
-├── public/            # Static assets
-└── types.d.ts         # TypeScript declarations
-```
-
-## Contributing
-
-NO CONTRIBUTING PLEASE!
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, watch youtube video
+This project is licensed under the MIT License.

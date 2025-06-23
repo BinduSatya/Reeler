@@ -1,47 +1,21 @@
 {
-  "name": "image-kit-shop",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
+  "name": "reeler",
+  "version": "1.0.0",
+  "description": "A project for managing image uploads and processing using MongoDB and Mongoose.",
+  "main": "lib/db.ts",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "seed": "node scripts/seed.js",
-    "mailtrap": "node scripts/mail-test.js"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/jsonwebtoken": "^9.0.6",
-    "bcrypt": "^5.1.1",
-    "bcryptjs": "^2.4.3",
-    "daisyui": "^4.12.20",
-    "dotenv": "^16.4.7",
-    "imagekit": "^4.1.4",
-    "imagekitio-next": "^1.0.1",
-    "jsonwebtoken": "^9.0.2",
-    "lucide-react": "^0.468.0",
-    "mongoose": "^8.8.4",
-    "next": "15.0.4",
-    "next-auth": "^4.24.11",
-    "nodemailer": "^6.9.16",
-    "razorpay": "^2.9.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-hook-form": "^7.54.0"
+    "mongoose": "^6.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/nodemailer": "^6.4.17",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5"
-  }
+    "ts-node": "^10.0.0",
+    "typescript": "^4.0.0",
+    "ts-node-dev": "^1.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
